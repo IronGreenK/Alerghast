@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService{
         if (!findByEmail(user.getEmail()).isPresent()) {
             return "ok";
         }else {
-            return "existe usuario";
+            return "existe un usuario";
         }
     }
 
